@@ -25,7 +25,7 @@ app.use(helmet());
 app.use(compression());
 
 app.use(cors({
-    origin: [config.clientUrl, 'http://localhost:3000', 'http://localhost:3001'],
+    origin: [config.clientUrl, 'http://localhost:3000', 'http://localhost:3001', 'http://localhost:3010'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
