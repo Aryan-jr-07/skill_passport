@@ -1,0 +1,17 @@
+# ─── Backend ──────────────────────────────────────────────────────────────────
+backend/node_modules/
+backend/.env
+backend/prisma/migrations/
+
+# ─── Frontend ─────────────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+
+# ─── System ───────────────────────────────────────────────────────────────────
+.DS_Store
+*.log
+npm-debug.log*
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+# docker-compose doesn't need to be gitignored; only local data volumes

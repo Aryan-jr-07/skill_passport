@@ -1,0 +1,16 @@
+{
+    "name": "skill-passport",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "install:all": "cd backend && npm install && cd ../frontend && npm install",
+        "dev:backend": "cd backend && npm run dev",
+        "dev:frontend": "cd frontend && npm run dev",
+        "db:up": "docker-compose up -d postgres redis",
+        "db:migrate": "cd backend && npx prisma migrate dev --name init",
+        "db:seed": "cd backend && npm run db:seed",
+        "db:generate": "cd backend && npm run db:generate",
+        "setup": "npm run install:all && npm run db:up && sleep 5 && npm run db:migrate && npm run db:seed"
+    },
+    "description": "Skill Passport – Verified Skill Identity SaaS Platform"
+}
